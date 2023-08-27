@@ -50,4 +50,4 @@ jobs:
           app-name: 'trading-view-webhook-java'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_23A4666AEB8947FCAC0296DEA912B51B }}
-          package: '${{ github.workspace }}/build/libs/untitled-1.0-SNAPSHOT.jar'
+          package: '${{ github.workspace }}/**/untitled-1.0-SNAPSHOT.jar'
