@@ -25,7 +25,7 @@ public class TradingViewController {
             JsonNode jsonNode = objectMapper.readTree(reqBody);
 
             // You can now work with the JSON data using the JsonNode object
-            String message = "Received JSON data: " + jsonNode.toString();
+            String message = jsonNode.toString();
             log.info("Request received {}", message);
             return new SuccessResponse(message);
         } catch (Exception e) {
