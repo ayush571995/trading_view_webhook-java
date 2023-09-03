@@ -21,7 +21,7 @@ public class TradingViewController {
     @PostMapping(value = "/",  produces = MediaType.APPLICATION_JSON_VALUE)
     public BaseResponse HandleTradingViewPostRequest(@RequestBody String reqBody)
     {
-        try {
+       try {
             JsonNode jsonNode = objectMapper.readTree(reqBody);
 
             // You can now work with the JSON data using the JsonNode object
